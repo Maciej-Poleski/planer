@@ -1,0 +1,14 @@
+planer.cfg - lista przedmiotów
+
+ostatni plik jest kalendarzem (lista wolnych terminów)
+
+Plik z przedmiotem (przedmiot.txt):
+Lista kategori obowiązkowych (np. Wykłady, Ćwiczenia, Laboratoria)
+    W ramach kategori:
+    Lista alternatyw (możliwe grupy do wyboru (z nazwą grupy np. gr.1, 5))
+
+    Alternatywa:
+        Lista zajętych terminów związanych z tą konkretną alternatywą.
+
+Wynik:
+Liczba kombinacji pasujących do kalendarza

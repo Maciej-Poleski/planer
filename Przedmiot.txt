@@ -1,0 +1,19 @@
+3 (liczba kategori)
+Wykład
+Ćwiczenia
+Laboratoria
+8 (Liczba grup)
+gr. 1
+gr. 2
+gr. 3
+gr. 4
+gr. 5
+gr. 6
+gr. 7
+gr. 8
+4 (Liczba slotów zajętych przez pierwszą z kolei grupę)
+0 7 (Poniedziałek 7)
+3 8 (Czwartek 8)
+0 8 (Poniedziałek 8)
+
+itd...
