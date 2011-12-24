@@ -6,7 +6,7 @@
 #include <QtCore/QtGlobal>
 
 /**
- * @brief Pojedyńczy "slot" w planie lekcji. Konkretna godzina w konkretnym dniu.
+ * @brief Pojedynczy "slot" w planie lekcji. Konkretna godzina w konkretnym dniu.
  **/
 class Slot
 {
