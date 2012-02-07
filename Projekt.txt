@@ -12,3 +12,19 @@ Lista kategori obowiązkowych (np. Wykłady, Ćwiczenia, Laboratoria)
 
 Wynik:
 Liczba kombinacji pasujących do kalendarza
+
+TODO:
+
+ - Możliwość wprowadzenia harmonogramu i uzyskania listy możliwych planów lekcji.
+ - Rozbudowanie kalendarza o możliwość "podpinania" raportów z danej lekcji.
+   - Obecności
+   - Ocen i komentarzy
+   - Punktów i komentarzy
+   - Rozwiązanych zadań (typu Satori)
+   - Innych okoliczności (np. brak prowadzącego zajęcia, brak listy obecności)
+ - Możliwość automatycznej analizy raportów w celu:
+   - Uzyskania proponowanej oceny
+   - Informacji o frekwencji
+ - Mile widziane:
+   - Możliwość eksportu kalendarza i raportów do w miarę niezależnego formatu.
+     Np. HTML, LaTeX, XML, KOrganizer (być może Akonadi)

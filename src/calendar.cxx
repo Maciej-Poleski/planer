@@ -7,8 +7,12 @@
 #include <QtCore/QTextStream>
 #include <QtCore/QString>
 
+#include <Wt/Dbo/ptr>
+
 #include "slot.hxx"
 #include "group.hxx"
+
+using namespace Wt::Dbo;
 
 Calendar::Calendar() throw()
 {
@@ -42,12 +46,12 @@ bool &Calendar::operator()(const Slot &slot) throw()
 
 bool Calendar::insertGroup(const Group &group) throw()
 {
-    foreach(const Slot & slot, group.getSlots()) {
-        if(m_calendar[slot.day()][slot.hour()])
+    for(const ptr<Slot> slot: group) {
+        if(m_calendar[slot->day()][slot->hour()])
             return false;
     }
 
-    foreach(const Slot & slot, group.getSlots()) {
-        m_calendar[slot.day()][slot.hour()] = true;
+    for(const ptr<Slot> slot: group) {
+        m_calendar[slot->day()][slot->hour()] = true;
     }
 }

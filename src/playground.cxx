@@ -66,23 +66,23 @@ void Playground::loadSubjects() throw()
                 groupsList.append(name);
             }
 
-            Category category(categoriesList[i]);
+            Category *category=new Category(categoriesList[i]);
 
             for(int j = 0; j < groupsCount; ++j) {
                 quint32 slotsCount;
                 subjectStream >> slotsCount;
-                Group group(groupsList[j]);
+                Group *group=new Group(groupsList[j]);
                 for(int k = 0; k < slotsCount; ++k) {
                     quint32 day, hour;
                     subjectStream >> day >> hour;
-                    Slot slot(day, hour);
-                    group.insertSlot(slot);
+                    Slot *slot=new Slot(day, hour);
+                    group->insertSlot(slot);
                 }
-                category.insertGroup(group);
+                category->insertGroup(group);
             }
             subject.insertCategory(category);
         }
-        m_subjects.append(subject);
+        //m_subjects.append(subject); //FIXME
     }
 }
 
